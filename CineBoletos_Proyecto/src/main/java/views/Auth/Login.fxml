@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="421.0" prefWidth="510.0" style="-fx-background-color: #FDE9EA;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AuthController.Login">
+   <children>
+      <VBox fx:id="panelFormSignIn" alignment="CENTER" layoutX="14.0" layoutY="18.0" prefHeight="383.0" prefWidth="480.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label text="Iniciar Sesión" textFill="WHITE">
+               <font>
+                  <Font name="Chalkboard Bold" size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Label>
+            <VBox>
+               <children>
+                  <Label text="Usuario" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="txtUserSignIn" onKeyTyped="#eventKey" prefHeight="37.0" promptText="Ej. Administrador">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label text="Contraseña" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Bold" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <StackPane>
+                     <children>
+                        <PasswordField fx:id="txtPasswordSignIn" onKeyTyped="#eventKey" prefHeight="37.0" promptText="Ej. 1234">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </PasswordField>
+                        <TextField fx:id="txtPasswordSignInMask" onKeyTyped="#eventKey" prefHeight="37.0" promptText="Ej. Empanadas29-">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </StackPane>
+                  <CheckBox fx:id="checkViewPassSignIn" mnemonicParsing="false" text="Ver Contraseña" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Medium Italic" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </CheckBox>
+                  <HBox alignment="TOP_CENTER" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnSignIn" mnemonicParsing="false" onAction="#actionEvent" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #F4C2C2; -fx-border-radius: 5px; -fx-background-radius: 5px;" text="INGRESAR" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnClean" mnemonicParsing="false" onAction="#actionEvent" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #F4C2C2; -fx-border-radius: 5px; -fx-background-radius: 5px;" text="CLEAR" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

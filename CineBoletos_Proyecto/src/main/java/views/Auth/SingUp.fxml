@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controllers.AuthController.SingUp">
+   <children>
+      <ImageView fitHeight="484.0" fitWidth="710.0">
+         <image>
+            <Image url="@../../../../../../../Downloads/Untitled_Artwork%207.png" />
+         </image>
+      </ImageView>
+      <VBox fx:id="panelFormSignUp" alignment="CENTER" prefHeight="484.0" prefWidth="710.0" style="-fx-background-color: #FDE9EA;">
+         <children>
+            <Label text="Formulario de Registro" textFill="#707b7c">
+               <font>
+                  <Font name="Chalkboard Bold" size="30.0" />
+               </font>
+            </Label>
+            <VBox prefWidth="100.0">
+               <children>
+                  <Label text="Correo Electronico" textFill="#707b7c">
+                     <font>
+                        <Font name="Futura Bold" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="txtEmailSignUp" prefHeight="30.0" promptText="Ej. administrador@gmail.com">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label text="Usuario" textFill="#707b7c">
+                     <font>
+                        <Font name="Futura Bold" size="15.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="txtUserSignUp" prefHeight="30.0" promptText="Ej. Administrador0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <HBox>
+                     <children>
+                        <VBox HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Contraseña" textFill="#707b7c">
+                                 <font>
+                                    <Font name="Futura Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <PasswordField fx:id="txtPassword" prefHeight="30.0" promptText="Ej. Palta99" />
+                           </children>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Confirmar Contraseña" textFill="#707b7c">
+                                 <font>
+                                    <Font name="Futura Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                              <PasswordField fx:id="txtConfirmPassword" prefHeight="30.0" promptText="Ej. Palta99" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER">
+                     <children>
+                        <Button fx:id="btnSignUp" mnemonicParsing="false" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #FFFF; -fx-background-radius: 5px; -fx-border-radius: 5px;" text="REGISTRAR" textFill="#707b7c">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnCleanSignUp" mnemonicParsing="false" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: #FFFF; -fx-border-radius: 5px; -fx-background-radius: 5px;" text="CLEAN" textFill="#707b7c">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <ImageView fitHeight="200.0" fitWidth="200.0">
+                           <image>
+                              <Image url="@../../../../../../../Downloads/colegiala.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
