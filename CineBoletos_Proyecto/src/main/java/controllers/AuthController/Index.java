@@ -15,6 +15,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import com.mycompany.cineboletos_proyecto.App;
 /**
  * FXML Controller class
  *
@@ -26,9 +27,8 @@ public class Index implements Initializable {
      * Initializes the controller class.
      */
     
-    
-     @FXML
-    public Button btnSignIn, btnSignUp;
+    @FXML
+    public Button btnSignIn, btnSignUp, continuar;
     
     @FXML
     public StackPane containerForm;
@@ -53,7 +53,11 @@ public class Index implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-          try {
+        
+       continuar.setOnMouseClicked(event -> {
+           App.setRoot("Home");
+       });
+       try {
             signInForm = loadForm("/views/Auth/Login.fxml");
             signUpForm = loadForm("/views/Auth/SingUp.fxml");    
             containerForm.getChildren().addAll(signInForm,signUpForm);
@@ -65,7 +69,12 @@ public class Index implements Initializable {
     }    
     
     private VBox loadForm(String url) throws IOException{    
-        return (VBox) FXMLLoader.load(Location.loadPath(url));    
+        try {
+            return (VBox) FXMLLoader.load(Location.loadPath(url));  
+        } catch (IOException e) {
+            System.out.println(e.toString());
+            return new VBox();
+        }  
     }
     
     

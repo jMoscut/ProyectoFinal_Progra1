@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controllers.UsersController.Create">
+   <children>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="610.0" style="-fx-background-color: #f4c2c2;">
+         <children>
+            <Label prefHeight="54.0" prefWidth="280.0" text="Crear Nuevo Usuario" textFill="WHITE">
+               <font>
+                  <Font name="Futura Bold" size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </Label>
+            <VBox prefHeight="58.0" prefWidth="539.0">
+               <children>
+                  <Label text="Nombre" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nombre" promptText="Ingresa un Nombre..." />
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="15.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox prefHeight="58.0" prefWidth="539.0">
+               <children>
+                  <Label text="Correo Electronico" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="correo" promptText="Ingresa un correo" />
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="20.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox prefHeight="58.0" prefWidth="539.0">
+               <children>
+                  <Label text="Contraseña" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="clave" promptText="Ingresa una contraseña" />
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox prefHeight="58.0" prefWidth="539.0">
+               <children>
+                  <Label text="Numero" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="numero" promptText="ingresa un numero" />
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox prefHeight="58.0" prefWidth="539.0">
+               <children>
+                  <Label text="Activo" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="activo" maxWidth="1.7976931348623157E308" style="-fx-background-color: white;" />
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox prefHeight="58.0" prefWidth="539.0">
+               <children>
+                  <Label text="Rol" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="rol" maxWidth="1.7976931348623157E308" style="-fx-background-color: white;" />
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="10.0" />
+               </VBox.margin>
+            </VBox>
+            <Button fx:id="crear" mnemonicParsing="false" prefHeight="44.0" prefWidth="231.0" style="-fx-border-color: white; -fx-background-color: #707B7C;" text="Crear Usuario" textFill="WHITE">
+               <font>
+                  <Font name="Futura Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="regresar" mnemonicParsing="false" prefHeight="38.0" prefWidth="145.0" style="-fx-border-color: white; -fx-background-color: #707B7C;" text="Regresar" textFill="WHITE">
+               <font>
+                  <Font name="Futura Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

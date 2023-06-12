@@ -36,3 +36,23 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
   -fx-background-color: #218838;
   -fx-border-color: #1e7e34;
 }
+
+.button-danger {
+  -fx-text-fill: #fff;
+  -fx-background-color: #C9485F;
+  -fx-border-color: #C9485F;
+}
+.button-danger:hover {
+  -fx-background-color: #DF5C74;
+  -fx-border-color: #DF5C74;
+}
+
+.toggle-button:selected {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+}
+
+.toggle-button {
+    -fx-background-color: gray;
+    -fx-text-fill: black;
+}

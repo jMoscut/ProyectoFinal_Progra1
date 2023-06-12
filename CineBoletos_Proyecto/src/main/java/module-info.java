@@ -9,7 +9,9 @@ module com.mycompany.cineboletos_proyecto {
     exports Conexion;
     exports controllers.AuthController;
     exports models;
-    exports com.mycompany.cineboletos_proyecto;
-      
-   
+    exports controllers.EventsController;
+    exports controllers.ResponsibleController;
+    exports controllers.SeatController;
+    exports controllers.UsersController;
+    exports com.mycompany.cineboletos_proyecto;    
 }

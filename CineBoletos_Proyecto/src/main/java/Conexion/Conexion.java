@@ -14,15 +14,23 @@ import java.sql.SQLException;
  */
 public class Conexion {
     
-        private static final String url = "jdbc:postgresql://localhost:5432/Prueba";
-    private static final String user = "postgres";
-    private static final String password = "andrea2911";
+  private static final String URL = "jdbc:postgresql://boletosproyecto1.postgres.database.azure.com:5432/adelanto_database";
+    private static final String USER = "adminjackeline";
+    private static final String PASSWORD = "Abuelita2019";
     
-   
+    
+ 
+    public Conexion() {
+        // Código del constructor
+    }    
+    
+   /**
+      *
+      * @return la conexion.
+      */
     public static Connection getConection(){
        try{
-           Connection connection = DriverManager.getConnection(url,user,password);            
-           System.out.println("conexion exitosa");
+           Connection connection = DriverManager.getConnection(URL,USER, PASSWORD);            
            return connection;
        }
        catch (SQLException e) {

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controllers.UsersController.Index">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="-15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="836.0" style="-fx-background-color: #f4c2c2;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="RIGHT" prefHeight="27.0" prefWidth="332.0" text="Lista de Usuarios" textFill="WHITE">
+               <font>
+                  <Font name="Chalkboard Bold" size="29.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </Label>
+            <VBox alignment="CENTER_RIGHT" prefHeight="47.0" prefWidth="600.0" />
+            <VBox prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <TableView fx:id="tablaUsers" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #707B7C;" tableMenuButtonVisible="true" VBox.vgrow="ALWAYS">
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                     <columns>
+                        <TableColumn fx:id="id" prefWidth="75.0" text="Id" />
+                        <TableColumn fx:id="nombre" prefWidth="75.0" text="Nombre" />
+                        <TableColumn fx:id="correo" prefWidth="100.79998779296875" text="Correo" />
+                        <TableColumn fx:id="activo" prefWidth="100.79998779296875" text="Activo" />
+                        <TableColumn fx:id="rol" prefWidth="100.79998779296875" text="Rol" />
+                        <TableColumn fx:id="numero" prefWidth="100.79998779296875" text="Numero" />
+                        <TableColumn fx:id="registro" prefWidth="100.79998779296875" text="Registro" />
+                        <TableColumn fx:id="acciones" prefWidth="75.0" text="Acciones" />
+                     </columns>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </TableView>
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="20.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="47.0" prefWidth="600.0">
+               <children>
+                  <Button fx:id="create" mnemonicParsing="false" prefHeight="47.0" prefWidth="181.0" style="-fx-background-color: #707B7C; -fx-border-color: white;" styleClass="button-primary" text="Crear Usuario" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Bold" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets right="30.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="dashboard" mnemonicParsing="false" text="Dashboard" visible="false">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets right="30.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

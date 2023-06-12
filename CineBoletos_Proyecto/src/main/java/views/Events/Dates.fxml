@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="410.0" prefWidth="415.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controllers.EventsController.Dates">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="-5.0" prefHeight="410.0" prefWidth="422.0" style="-fx-background-color: #707B7C;">
+         <children>
+            <VBox layoutX="42.0" layoutY="73.0" prefHeight="211.0" prefWidth="318.0">
+               <children>
+                  <Label text="Id Fecha" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="idfecha" editable="false" />
+                  <Label text="Fecha para el evento" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="fecha" editable="false" maxWidth="1.7976931348623157E308" />
+                  <Label text="Hora para el evento" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="hora" />
+                  <Label text="Pertenece al evento" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="evento" editable="false" />
+                  <Label text="Activo" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="activo" maxWidth="1.7976931348623157E308" prefWidth="150.0" />
+               </children>
+            </VBox>
+            <Label layoutX="70.0" layoutY="14.0" prefHeight="36.0" prefWidth="283.0" text="Modificar Fecha del Evento" textFill="WHITE">
+               <font>
+                  <Font name="Chalkboard Bold" size="21.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" layoutX="42.0" layoutY="322.0" prefHeight="67.0" prefWidth="318.0">
+               <children>
+                  <Button fx:id="guardar" mnemonicParsing="false" style="-fx-background-color: #f4c2c2; -fx-border-color: #707B7C;" styleClass="button-primary" text="Guardar Fecha" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="regresar" mnemonicParsing="false" prefHeight="29.0" prefWidth="132.0" style="-fx-background-color: #f4c2c2; -fx-border-color: #707B7C;" styleClass="button-danger" text="Regresar" textFill="WHITE">
+                     <font>
+                        <Font name="Futura Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

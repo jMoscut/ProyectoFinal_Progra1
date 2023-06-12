@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controllers.homeController.Cantidad">
+   <children>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="610.0" style="-fx-background-color: #f4c2c2;">
+         <children>
+            <Label text="Cantidad de Boletos" textFill="WHITE" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Futura Bold" size="28.0" />
+               </font>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </Label>
+            <Label alignment="TOP_CENTER" contentDisplay="TOP" prefHeight="68.0" prefWidth="126.0" text="Cantidad" textFill="WHITE" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Futura Bold" size="26.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cantidad" prefHeight="24.0" prefWidth="488.0" style="-fx-background-image: white;" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <GridPane.margin>
+                  <Insets top="50.0" />
+               </GridPane.margin>
+            </ComboBox>
+            <Button fx:id="regresar" mnemonicParsing="false" style="-fx-background-color: #707B7C;" styleClass="button-danger" text="Regresar" textFill="WHITE" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Futura Bold" size="24.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="30.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="continuar" mnemonicParsing="false" style="-fx-background-color: #707B7C;" styleClass="button-primary" text="Continuar " textFill="WHITE" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+               <font>
+                  <Font name="Futura Bold" size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="130.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+   </children>
+</AnchorPane>

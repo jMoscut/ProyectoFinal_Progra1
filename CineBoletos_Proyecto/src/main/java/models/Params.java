@@ -10,15 +10,23 @@ package models;
  * @param <T>
  */
   
-    public class Params<T> {
+public class Params<T> {
     private T data;
     
+    /**
+     * get a Params
+     * 
+     * @return Params of Type
+     */
     public T getDato() {
         return data;
     }
 
+    /**
+     * set a Params
+     * @param dato Params of Type
+     */
     public void setDato(T dato) {
         this.data = dato;
     } 
-    
 }
